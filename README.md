@@ -8,6 +8,7 @@ Templates rendering plugin support for Fastify.
 
 `@fastify/view` decorates the reply interface with the `view` method for managing view engines, which can be used to render templates responses.
 
+
 Currently supports the following templates engines:
 
 - [`ejs`](https://ejs.co/)
