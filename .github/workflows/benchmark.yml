@@ -1,0 +1,15 @@
+name: Benchmark PR
+
+on:
+  pull_request_target:
+    types: 
+      - labeled
+
+jobs:
+  benchmark:
+    if: ${{ github.event.label.name == 'benchmark' }}
+    uses: mweberxyz/fastify-workflows/.github/workflows/benchmark-pr.yml@feature/benchmark-pr
+    with:
+      benchmarks-dir: 'benchmark'
+      files-to-ignore: '["setup.js"]'
+
