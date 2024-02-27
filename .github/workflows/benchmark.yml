@@ -10,7 +10,7 @@ jobs:
     if: ${{ github.event.label.name == 'benchmark' }}
     uses: mweberxyz/fastify-workflows/.github/workflows/benchmark-pr.yml@feature/benchmark-pr
     with:
-      bench-runs: '2'
-      bench-duration: '20'
+      bench-runs: '1'
+      bench-duration: '8'
       benchmarks-dir: 'benchmark'
       files-to-ignore: '["setup.js"]'
